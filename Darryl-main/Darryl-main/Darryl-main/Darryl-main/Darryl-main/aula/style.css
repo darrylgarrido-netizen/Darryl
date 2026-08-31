@@ -1,46 +1,8 @@
-:root{
-    --cor-primaria: blue; 
-    --cor-secundaria: blue;  
-    --cor-fundo: white;
-    --cor-texto: red;
-    --cor-contraste: white;
-    --cor-botao: white;
-
-    --fonte-texto: 'Segoe UI', sans-serif;
-}
-
-.tena-escuro {
-    --cor-primaria: white; 
-    --cor-secundaria: blue;  
-    --cor-fundo: #000;
-    --cor-texto: #ffffff;
-    --cor-contraste: #1e293b;
-    --cor-botao: #151428;
-}
-
-.tema-escuro a {
-    color: var(--cor-secundaria);
-}
-
-.tema-escuro p {
-     color: var(--cor-texto);
-
-}
-
-.tema-escuro header p {
-    color: var(--cor-contraste);
-}
-
-body {
-    max-width: 100vw;
-    font-family: var(--fonte-texto);
-
-}
-
 header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-contraste);
+    background-color: blue;
+    color:aliceblue;
     text-align: center;
+    max-width: 800px;
     margin: 0 auto;
     padding: 16px;
 }
@@ -48,22 +10,31 @@ header {
     main{
         background-color: white;
         color: blue;
+        max-width: 800px;
         margin: 0 auto;
         padding: 16px;
 
         display: flex;
-    }
+        flex-wrap: wrap;
+}
 
     article {
         display: flex;
+       
+    
+    border: 1px solid #183c63;
 
-        border: 1px solid blue;
-        
-        margin: 16px;
-        gap: 16px;
-        padding: 16px;
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
 
-    }
+     flex: 1 1 25%;
+
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+}
 
     img {
     width: 80px;
@@ -71,5 +42,5 @@ header {
  }
 
  .artigo-autor {
-font-weight: bold;
+      font-weight: bold; 
  }
